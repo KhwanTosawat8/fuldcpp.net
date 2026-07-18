@@ -3,7 +3,7 @@
 	<Title>FulDC++ Update</Title>
 	<Message>A new version of FulDC++ is available. See the changelog for details.</Message>
 	<VersionInfo MinOsVersion="10.0">
-		<UpdateURLx64 Build="0" VersionString="0" TTH="" MinUpdateRev="0"></UpdateURLx64>
+		<UpdateURLx64 Build="5241" VersionString="1.04" TTH="JVWGJZOJFKAIOMGSVKK2WPMZPNVIUXEFEIKTH4Y" MinUpdateRev="0">https://fuldcpp.net/update/updater/updater_x64_1.04.zip</UpdateURLx64>
 		<URL>https://fuldcpp.net/changelog.html</URL>
 	</VersionInfo>
 </DCUpdate>
