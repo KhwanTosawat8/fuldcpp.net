@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features — FulDC++</title>
+<meta name="description" content="What FulDC++ adds on top of AirDC++: dark theme, native plugins, chat triggers, auto-recovery, protocol robustness and more.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs>
+        <radialGradient id="o1" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#bcd2ff"/><stop offset="45%" stop-color="#6c7bff"/><stop offset="100%" stop-color="#3a3ad6"/></radialGradient>
+        <radialGradient id="o2" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#d9c2ff"/><stop offset="45%" stop-color="#9a6cff"/><stop offset="100%" stop-color="#5a2fd6"/></radialGradient>
+        <radialGradient id="o3" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#bff0ff"/><stop offset="45%" stop-color="#4fc3ff"/><stop offset="100%" stop-color="#1f7fd6"/></radialGradient>
+      </defs>
+      <ellipse cx="32" cy="34" rx="27" ry="12" fill="none" stroke="#6c7bff" stroke-width="2" opacity=".5" transform="rotate(-18 32 34)"/>
+      <circle cx="20" cy="30" r="9" fill="url(#o1)"/>
+      <circle cx="32" cy="36" r="10" fill="url(#o3)"/>
+      <circle cx="45" cy="28" r="8" fill="url(#o2)"/>
+    </svg>
+    <span>FulDC<span class="plus">++</span></span>
+    </a>
+    <span class="spacer"></span>
+    <a class="link" href="index.html">Home</a>
+    <a class="link active" href="features.html">Features</a>
+    <a class="link" href="changelog.html">Changelog</a>
+    <a class="btn primary cta" href="download.html">Download</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section>
+      <h1 class="section-title">Features</h1>
+      <p class="section-sub">FulDC++ is a full DC client — ADC and NMDC, TLS transfers, segmented downloading, autosearch and an optional Web UI. Below are the additions that set it apart from stock AirDC++.</p>
+
+      <div class="subhead">Look &amp; feel</div>
+      <div class="flist">
+        <div class="frow"><span class="dot"></span><div><h3>Full independent dark theme</h3><p>Dark title bars, menus, scrollbars, list/tree chrome, chat and status bar — independent of the OS theme. 52 colour presets, a custom palette editor, follow-OS option and per-hub tab colours. Toggles live with no restart.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>GUI modernization</h3><p>Inline chat find bar (F3), resizable dialogs, TaskDialog prompts, a recent-hubs dropdown, quick-connect speed-pane sparklines and an Aero connect wizard.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Status-bar enhancements</h3><p>Clickable Slots/Queued panes, show/hide panels from a right-click menu, plus shared-files, favourites-online and refresh-status panels.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Vertical tabs &amp; chat autocomplete</h3><p>Optional vertical tab strip, per-hub tab colouring, and a slash-command autocomplete popup in chat.</p></div></div>
+      </div>
+
+      <div class="subhead">Power features</div>
+      <div class="flist">
+        <div class="frow"><span class="dot"></span><div><h3>Runs side-by-side with AirDC++</h3><p>Its own instance identity and profile folders, with a one-time automatic import of an existing AirDC++ profile. Install it without disturbing your current setup.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Native DCAPI plugins</h3><p>DC++ native C-ABI plugin support (DCAPI v8) — all 10 interfaces and 26 hooks, with a Plugins menu and settings page.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Chat triggers</h3><p>Keyword / regex chat automation with capture groups $1–$9, away-only mode, fire statistics and import/export.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Auto-recovery &amp; crash supervisor</h3><p>A watchdog automatically restarts FulDC++ if it crashes or stops responding, including a freeze watchdog for hangs.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Group users by type</h3><p>Hub user lists grouped into Ops / Bots / Users with live header counts.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Self-updating GeoIP</h3><p>IP geolocation from DB-IP.com with a configurable update URL, expiry and a validated staged swap. Dedicated GeoIP settings page.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>"Only secure hubs" search &amp; pause-all</h3><p>A quick-select search filter for hubs with secure transfers, and a one-click pause-all-downloads toolbar action.</p></div></div>
+      </div>
+
+      <div class="subhead">Security &amp; protocol robustness</div>
+      <div class="flist">
+        <div class="frow"><span class="dot"></span><div><h3>Hardened networking</h3><p>Rejection of spoofed UDP packets, side-by-side port-hijack protection, and a one-click dialog to re-pin a changed TLS keyprint.</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>Protocol gap fixes</h3><p>ADC additions (failover, RDEX, passive PSR relay and more) and NMDC additions ($MyINFO server/fireball bits, $NickRule/$SearchRule, TTHS short search, $FailOver, $MCTo, salted-password login, $BotList).</p></div></div>
+        <div class="frow"><span class="dot"></span><div><h3>In-client updates</h3><p>Signed, self-installing updates delivered straight from this site — no manual reinstall.</p></div></div>
+      </div>
+
+      <p style="text-align:center;margin-top:36px"><a class="btn primary" href="download.html">Download FulDC++ 1.03</a></p>
+    </section>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div class="attrib">
+      <strong>FulDC++</strong> by Sulan &amp; Lansh, 2026.<br>
+      Based on AirDC++ © 2007–2024 Night and maksis · StrongDC++ © 2004–2011 Big Muscle.
+    </div>
+    <div>
+      <a href="index.html">Home</a> · <a href="features.html">Features</a> · <a href="download.html">Download</a> · <a href="changelog.html">Changelog</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
