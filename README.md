@@ -66,8 +66,17 @@ into the client (`airdcpp/airdcpp/core/crypto/pubkey.h`). Do this once, keep `ai
    - `update/version.xml.sign`
    - `update/updater/updater_x64_<ver>.zip`
    Also drop a fresh-install ZIP in `download/` and bump the version on `download.html`.
-5. After pushing, verify: `curl https://fuldcpp.net/update/version.xml | file -` shows no CRLF, and
-   an old client offered the higher `Build` accepts and self-installs.
+
+   > **NEVER include a `Settings` folder (or `Certificates/`, `*.key`, `DCPlusPlus.xml`,
+   > `country_ip_db.mmdb`, logs) in the download ZIP.** A running client populates `Settings`
+   > with a **unique per-user TLS private key** and personal config — shipping it leaks that key
+   > to everyone and gives all users the same identity. The download must contain ONLY:
+   > `FulDC.exe`, `FulDC.pdb` (the stripped one), `Node.js`, `Themes`, `Web-resources`, `EmoPacks`.
+   > Build it from the compiled output but copy those items explicitly — do **not** copy the whole
+   > `compiled/.../windows/` folder (it contains build junk + any test-run `Settings`).
+5. After pushing, verify: `curl https://fuldcpp.net/update/version.xml | file -` shows no CRLF; the
+   download ZIP contains no `Settings`/`*.key`; and an old client offered the higher `Build`
+   accepts and self-installs.
 
 > The private key `air_rsa` is **never** committed. The matching public key is embedded in the
 > client (`airdcpp/airdcpp/core/crypto/pubkey.h`); only updates signed by `air_rsa` are trusted.
