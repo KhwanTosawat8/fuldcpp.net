@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <DCUpdate>
-	<Title>FulDC++ Update</Title>
-	<Message>A new version of FulDC++ is available. See the changelog for details.</Message>
 	<VersionInfo MinOsVersion="10.0">
-		<UpdateURLx64 Build="5255" VersionString="1.05" TTH="ARMBN3OPVIOMP63DHEOBQYLWBISKW6UQ3J5UHAY" MinUpdateRev="0">https://fuldcpp.net/update/updater/updater_x64_1.05.zip</UpdateURLx64>
 		<URL>https://fuldcpp.net/changelog.html</URL>
+		<UpdateURLx64 Build="5255" VersionString="1.05" TTH="ARMBN3OPVIOMP63DHEOBQYLWBISKW6UQ3J5UHAY" MinUpdateRev="0">https://fuldcpp.net/update/updater/updater_x64_1.05.zip</UpdateURLx64>
+		<Title>FulDC++ 1.05</Title>
+		<Message>A new version of FulDC++ is available. See the changelog for details.</Message>
 	</VersionInfo>
 </DCUpdate>
