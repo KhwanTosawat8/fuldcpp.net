@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<DCUpdate>
+	<VersionInfo MinOsVersion="10.0">
+		<URL>https://fuldcpp.net/changelog.html</URL>
+		<UpdateURLx64 Build="0" VersionString="0" TTH="" MinUpdateRev="0"></UpdateURLx64>
+		<Title>FulDC++ Update</Title>
+		<Message>A new version of FulDC++ is available. See the changelog for details.</Message>
+	</VersionInfo>
+</DCUpdate>

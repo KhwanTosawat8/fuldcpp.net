@@ -49,7 +49,12 @@ into the client (`airdcpp/airdcpp/core/crypto/pubkey.h`). Do this once, keep `ai
 ## Publishing a release (see project plan Part C)
 
 1. Build `x64-release` → `compiled/x64-release/windows/FulDC.exe`.
-2. Copy `update/version.xml` (the template in this repo) into your build output dir.
+2. Copy `update/version.template.xml` → your build output dir as `version.xml`.
+
+   > **CRITICAL — `<Title>` and `<Message>` MUST be *inside* `<VersionInfo>`** (see the template),
+   > not direct children of `<DCUpdate>`. The client's `announceVersion()` searches for them while
+   > positioned inside `<VersionInfo>`; if they're outside, the "update available" dialog **never
+   > appears** (silently — no error). This is how AirDC++'s own manifest is structured.
 3. Run:
    ```
    FulDC.exe /createupdate --resource-directory="...\installer" --output-directory="...\out"
