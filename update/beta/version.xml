@@ -2,8 +2,8 @@
 <DCUpdate>
 	<VersionInfo MinOsVersion="10.0">
 		<URL>https://fuldcpp.net/changelog.html</URL>
-		<UpdateURLx64 Build="5259" VersionString="1.06" TTH="D5TVVIU6X3JGPRQ4PSNPQVZZV4NUGTSYSBKF24I" MinUpdateRev="0">https://fuldcpp.net/update/updater/updater_x64_1.06.zip</UpdateURLx64>
-		<Title>FulDC++ 1.06</Title>
+		<UpdateURLx64 Build="5267" VersionString="1.07" TTH="IS6SSBXKYLPJ4AF4WTG4ACCIZZ7Q5UJTZV2UAVQ" MinUpdateRev="0">https://fuldcpp.net/update/updater/updater_x64_1.07.zip</UpdateURLx64>
+		<Title>FulDC++ Update</Title>
 		<Message>A new version of FulDC++ is available. See the changelog for details.</Message>
 	</VersionInfo>
 </DCUpdate>
